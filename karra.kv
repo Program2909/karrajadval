@@ -1,0 +1,29 @@
+BoxLayout:
+    orientation: "vertical"
+    padding: 20
+    spacing: 20
+
+    Label:
+        text: app.savol
+        font_size: 40
+
+    TextInput:
+        id: javob
+        multiline: False
+        input_filter: "int"
+        font_size: 30
+
+    Button:
+        text: "Tekshirish"
+        font_size: 26
+        on_release:
+            app.tekshir(javob.text)
+            javob.text = ""
+
+    Label:
+        text: app.natija
+        font_size: 26
+
+    Label:
+        text: app.ball
+        font_size: 24
